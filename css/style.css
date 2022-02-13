@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     font-family: 'Playfair Display', serif;
 }
 
@@ -51,30 +50,46 @@
         background-color: red;
     }
 
+
+    /*BARRA DE NAVEGACIÓN, MICHELIN, COVID, LINKS, CITA*/
+
+    .navegacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        margin-top: 70px;
+        background-image: linear-gradient(to right, rgb(95, 64, 64), ivory, rgb(95, 64, 64));
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        box-shadow: 1px 2px 3px grey;
+    }
+
     /*contenedor que engloba las dos imágenes, de muñeco y covid free*/
     .michecovid{
-        position: relative;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 65px;
+        height: 0;
+        background-color: red;
     }
 
     /*Imagen muñeco michelín sobre nav*/
     .michelin img{
         position: relative;
-        top: -47px;
+        top: -23px;
         display: inline-block;
-        width: 180px;
-        margin-left: 30px;
+        width: 150px;
+        margin-left: 50px;
         z-index: 10;
     }
 
     .covid img{
         position: relative;
-        top: -30px;
+        top: -35px;
+        right: 30px;
         display: inline-block;
-        width: 80px;
+        width: 100px;
         margin-right: 20px;
     }
 
@@ -89,7 +104,7 @@
     }
 
     ul li a p::first-letter{
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     ul li a p:hover{
@@ -98,14 +113,127 @@
         transition: all 0.6s linear;
     }
 
-    nav{
+    /*REDES SOCIALES Y RESERVAS*/
+    .redesycontacto{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        height: 60px;
-        background-image: linear-gradient(to right, rgb(95, 64, 64), ivory, rgb(95, 64, 64));
-        border-top: 2px solid grey;
-        border-bottom: 2px solid grey;
     }
+
+    .social{
+        margin: 20px;
+        width: 200px;
+    }
+
+    .fa-twitter, .fa-facebook-f, .fa-pinterest, .fa-instagram,.fa-google-plus-g{
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .fa-twitter{
+        color: #1DA1F2;
+        transition: 0.7s;
+    }
+
+    .fa-facebook-f{
+        color: #4267B2;
+        transition: 0.7s;
+    }
+
+    .fa-pinterest{
+        color: #E60023;
+        transition: 0.7s;
+    }
+
+    .fa-instagram{
+        color: #C13584;
+        transition: 0.7s;
+    }
+
+    .fa-google-plus-g{
+        color: #DB4437;
+        transition: 0.7s;
+    }
+
+    .fa-pinterest:hover, .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-google-plus-g:hover{
+        opacity: 0.6;
+        transition: 0.8s;
+    }
+
+    .telf{
+        color: #fb6920;
+        margin-right: 20px;
+    }
+
+    .telf::first-letter{
+        font-size: 1.2rem;        
+    }
+
+    /*MAIN*/
+
+    h1{
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 400;
+        color: #2a92d9;
+        margin-top: 40px;
+    }
+
+    h1 span{
+        font-size: 1.6rem;
+    }
+
+    /*Ventana al background*/
+
+    .ventana{
+        width: 100%;
+        height: 260px;
+        margin-top: 50px;
+        background-image: url(/img/index/fr1_nigirisushi.jpg);
+        background-position: center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-attachment: fixed;
+        box-shadow: 0px 0px 10px black inset;
+    }
+
+    /*Cita Blockquote*/
+
+    .cita{
+        width: 80%;
+        height: 100px;
+        margin: 70px auto 0px auto;
+    }
+
+    .cita div{
+        display: flex;
+        align-items: center;
+        height: 70px;
+        border-left: 4px solid #2a92d9;
+    }
+
+    .cita blockquote{       
+        padding-left: 35px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        width: 90%;
+    }
+
+    .cita p{
+        margin-top: 10px;
+        text-align: end;
+        color: grey;
+    }
+
+    /*Linea separadora HR*/
+    hr{
+        margin: 40px auto 20px auto;
+        width: 30%;
+        border-top: 4px solid black;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
 }
