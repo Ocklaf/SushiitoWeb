@@ -5,6 +5,7 @@
     font-family: 'Playfair Display', serif;
 }
 
+/**************HEADER/NAV COMÚN A LAS PÁGINAS***********/
 /*Posicionado y dimensiones del logo, retorno de transforms aplicados en el hover con temporización*/
 .logotipo {
     display: block;
@@ -16,7 +17,7 @@
 /*Cambios al pasar el ratón por encima del logo*/
 .logotipo:hover {
     opacity: 0.7;
-    transform: rotate(-5deg) scale(105%);
+    transform: rotate(-5deg) scale(1.05);
     transition: all 0.7s linear;
 }
 
@@ -49,9 +50,8 @@
     background-color: red;
 }
 
-
+/***********NAV**********/
 /*BARRA DE NAVEGACIÓN, MICHELIN, COVID, LINKS, CITA*/
-
 .navegacion {
     display: flex;
     justify-content: center;
@@ -112,6 +112,8 @@ ul li a p:hover {
     border-bottom: 1px solid black;
     transition: all 0.6s linear;
 }
+
+/************FIN DEL NAV**********/
 
 /*REDES SOCIALES Y RESERVAS*/
 .redesycontacto {
@@ -178,8 +180,70 @@ ul li a p:hover {
     font-size: 1.2rem;
 }
 
-/*MAIN*/
+/********FIN DEL HEADER/NAV COMÚN A LAS PÁGINAS***********/
 
+/************FOOTER COMÚN***************/
+footer {
+    width: 1520px;
+    height: 300px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+}
+
+.footertextos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footertextos div {
+    width: 32%;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.footertextos div p span {
+    font-size: 1.3em;
+}
+
+.hrfooter {
+    width: 3px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+footer h3 {
+    color: #fb6920;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+footer h3 span {
+    color: #E60023;
+}
+
+footer h3::first-letter {
+    font-size: 1.2em;
+}
+
+address {
+    margin-top: 40px;
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+address span {
+    font-size: 1.3em;
+}
+
+/*************FIN DEL FOOTER COMÚN***************/
+
+
+/***************CSS DE LA PÁGINA INDEX***************/
+/*****MAIN DE LA PÁGINA INDEX*****/
 h1 {
     font-size: 1.4rem;
     text-align: center;
@@ -193,14 +257,11 @@ h1 span {
 }
 
 /*Ventana al background*/
-
 .ventana {
     width: 100%;
     height: 240px;
     margin-top: 50px;
     background-image: url(/img/index/fr1_nigirisushi.jpg);
-    background-position: center;
-    background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0px 0px 10px black inset;
@@ -242,7 +303,7 @@ hr {
 }
 
 /*Bloque entrega a domicilio*/
-.adomicilio{
+.adomicilio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -250,19 +311,19 @@ hr {
     margin: 100px auto;
 }
 
-.adomicilio h2{
+.adomicilio h2 {
     color: #2a92d9;
     font-size: 1em;
     text-align: center;
     font-weight: 400;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 
-.adomicilio h2::first-letter{
+.adomicilio h2::first-letter {
     font-size: 1.4em;
 }
 
-.adomiciliotexto{
+.adomiciliotexto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,45 +332,112 @@ hr {
     width: 60%;
 }
 
-.adomiciliotexto p{
+.adomiciliotexto p {
     font-size: 0.8em;
+    line-height: 1.4em;
 }
 
-.adomiciliotexto p::first-letter{
-    font-size: 1.3em;
+.adomiciliotexto p span {
+    font-size: 1.2em;
 }
 
-.imgrepartidor img{
+.imgrepartidor img {
     display: block;
     width: 300px;
     box-shadow: 0 0 10px grey;
 }
 
-/*Footer y su contenido*/
-footer{
-    width: 1520px;
-    background-color: rgb(53, 53, 53);
+/*Bloque galería de 6 imágenes con link*/
+.galeriaindex {
+    width: 80%;
+    margin: 100px auto 80px auto;
 }
 
-.footertextos{
+.galeriaindex h2{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    color: #2a92d9;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.galeriaindex h2::first-letter{
+    font-size: 1.4em;
+}
+
+.bloquetarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bloquetarjetas a{
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.bloquetarjetas a:hover{
+    opacity: 0.7;
+    transition: 0.9s;
+}
+
+.bloquetarjetas a>div{
     display: flex;
     justify-content: space-between;
+    flex-direction: column; 
+    width: 190px;
+    height: 390px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 0 10px rgb(192, 192, 192);
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
-footer div{
-    width: 60%;
-
+.tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5, .tarjeta6{
+    width: 163px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin: 12px auto;
 }
 
-address{
-    width: 100%;
+.tarjeta1+p, .tarjeta2+p, .tarjeta3+p, .tarjeta4+p, .tarjeta5+p, .tarjeta6+p{
+    width: 80%;
+    margin: -8px auto 0 auto;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 
-.hrfooter{
-    width: 3px;
-    height: 80px;
-    background-color: white;
-    border: 1px solid white;
+.tarjeta1{
+    background-image: url(/img/index/superBento.jpg);
 }
 
-@media screen and (max-width: 1600px) {}
+.tarjeta2{
+    background-image: url(/img/index/besoDragon.jpg);
+}
+
+.tarjeta3 {
+    background-image: url(/img/index/bentoFantasia.png);
+}
+
+.tarjeta4 {
+    background-image: url(/img/index/gambasMoriwase.jpg);
+}
+
+.tarjeta5 {
+    background-image: url(/img/index/miniBento.jpg);
+}
+
+.tarjeta6 {
+    background-image: url(/img/index/atunPicante.jpg);
+}
+
+@media screen and (max-width: 800px) {}
