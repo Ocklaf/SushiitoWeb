@@ -139,27 +139,27 @@ ul li a p:hover {
 
 .fa-twitter {
     color: #1DA1F2;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .fa-facebook-f {
     color: #4267B2;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .fa-pinterest {
     color: #E60023;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .fa-instagram {
     color: #C13584;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .fa-google-plus-g {
     color: #DB4437;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .fa-pinterest:hover,
@@ -168,7 +168,6 @@ ul li a p:hover {
 .fa-instagram:hover,
 .fa-google-plus-g:hover {
     opacity: 0.6;
-    transition: 0.8s;
 }
 
 .telf {
@@ -263,7 +262,7 @@ h1::first-letter {
     background-image: url(/img/index/fr1_nigirisushi.jpg);
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: 0px 0px 10px black inset;
+    box-shadow: 0px 0px 10px 2px black inset;
 }
 
 /*Cita Blockquote*/
@@ -376,12 +375,11 @@ hr {
     font-size: 0.8em;
     color: black;
     text-decoration: none;
-    transition: 0.9s;
+    transition: all 0.9s;
 }
 
 .bloquetarjetas a:hover{
     opacity: 0.7;
-    transition: 0.9s;
 }
 
 .bloquetarjetas a>div{
@@ -444,45 +442,127 @@ hr {
 /***************CSS DE LA PÁGINA EQUIPO***************/
 /*****MAIN DE LA PÁGINA EQUIPO*****/
 
+/*Bloque grid con imágenes y sus efectos*/
 .equipo{
     display: grid;
     grid-template-areas: 
     'm m c c f '
     'e e c c b ';
     width: 80%;
-    height: 400px;
+    height: 500px;
     gap: 5px;
     margin: 50px auto;
 }
 
+.equipo div:nth-child(1), .equipo div:nth-child(2), .equipo div:nth-child(3), .equipo div:nth-child(4), .equipo div:nth-child(5){
+    box-shadow: 0 0 5px 3px rgb(71, 71, 71);
+    border-radius: 8px;
+}
+
 .equipo div:nth-child(1){
-    background-image: url(/img/equipo/andrewNishimura.jpg);
     grid-area: m;
-    box-shadow: 0 0 8px grey;
+    background-image: url(/img/equipo/andrewNishimura.jpg);
+    background-size:cover;
+    background-position-y: -40px;
+    filter: sepia();
+    transition: 0.7s;
+}
+
+.equipo div:nth-child(1):hover{
+    transform: rotate(720deg);
 }
 
 .equipo div:nth-child(2){
-    background-color: blue;
     grid-area: c;
-    box-shadow: 0 0 8px grey;
+    background-image: url(/img/equipo/nakaneNishimura.jpg);
+    background-size: cover;
+    background-position-x: -130px;
+    filter: blur(2px);
+    transition: 0.7s;
+}
+
+.equipo div:nth-child(2):hover{
+    transform: rotate(20deg) scale(60%);
+    filter:blur()
 }
 
 .equipo div:nth-child(3){
-    background-color: orange;
     grid-area: f;
-    box-shadow: 0 0 8px grey;
+    background-image: url(/img/equipo/hichitoNishimura.jpg);
+    background-size: cover;
+    background-position-x: -65px;
+    filter: grayscale();
+    transition: 0.7s;
+}
+
+.equipo div:nth-child(3):hover{
+    transform: rotateY(180deg);
 }
 
 .equipo div:nth-child(4){
-    background-color: aqua;
     grid-area: e;
-    box-shadow: 0 0 8px grey;
+    background-image: url(/img/equipo/joeNishimura.jpg);
+    background-size: cover;
+    transition: 0.7s;
+}
+
+.equipo div:nth-child(4):hover{
+    transform: rotateX(180deg);
 }
 
 .equipo div:nth-child(5){
-    background-color: blueviolet;
     grid-area: b;
-    box-shadow: 0 0 8px grey;
+    background-image: url(/img/equipo/fredNishimura.jpg);
+    background-size: cover;
+    background-position-x: -150px;
+    filter: sepia();
+    transition: 0.7s;
+}
+
+.equipo div:nth-child(5):hover{
+    transform: skewX(20deg)
+}
+
+/*Bloque de citas y sus keyframes*/
+
+.andrewquote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    background-color: rebeccapurple;
+}
+
+.andrewquote div{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 2px black inset;    
+}
+
+.andrewquote div:hover{
+    animation: rebote 3s infinite ease-in-out;
+    background-color: blue;
+}
+
+@keyframes rebote {
+    from {top: -10px;}
+    to{top: 100px;}
+}
+
+.andrewquote hr{
+    width: 3px;
+    height: 100px;
+    background-color: #2a92d9;
+}
+
+.andrewquote blockquote{
+    width: 70%;
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 @media screen and (max-width: 800px) {}
