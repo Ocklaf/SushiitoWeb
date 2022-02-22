@@ -237,6 +237,7 @@ address {
 address span {
     font-size: 1.3em;
 }
+
 /*************FIN DEL FOOTER COMÚN***************/
 
 
@@ -351,7 +352,7 @@ hr {
     margin: 100px auto 80px auto;
 }
 
-.galeriaindex h2{
+.galeriaindex h2 {
     width: 80%;
     text-align: center;
     margin: 0 auto 50px auto;
@@ -360,7 +361,7 @@ hr {
     font-weight: 400;
 }
 
-.galeriaindex h2::first-letter{
+.galeriaindex h2::first-letter {
     font-size: 1.4em;
 }
 
@@ -370,7 +371,7 @@ hr {
     justify-content: space-around;
 }
 
-.bloquetarjetas a{
+.bloquetarjetas a {
     text-align: center;
     font-size: 0.8em;
     color: black;
@@ -378,14 +379,14 @@ hr {
     transition: all 0.9s;
 }
 
-.bloquetarjetas a:hover{
+.bloquetarjetas a:hover {
     opacity: 0.7;
 }
 
-.bloquetarjetas a>div{
+.bloquetarjetas a>div {
     display: flex;
     justify-content: space-between;
-    flex-direction: column; 
+    flex-direction: column;
     width: 190px;
     height: 390px;
     border-radius: 10px;
@@ -395,7 +396,12 @@ hr {
     padding-bottom: 10px;
 }
 
-.tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5, .tarjeta6{
+.tarjeta1,
+.tarjeta2,
+.tarjeta3,
+.tarjeta4,
+.tarjeta5,
+.tarjeta6 {
     width: 163px;
     height: 360px;
     background-size: cover;
@@ -406,18 +412,23 @@ hr {
     margin: 12px auto;
 }
 
-.tarjeta1+p, .tarjeta2+p, .tarjeta3+p, .tarjeta4+p, .tarjeta5+p, .tarjeta6+p{
+.tarjeta1+p,
+.tarjeta2+p,
+.tarjeta3+p,
+.tarjeta4+p,
+.tarjeta5+p,
+.tarjeta6+p {
     width: 80%;
     margin: -8px auto 0 auto;
     font-size: 0.9em;
     font-weight: 600;
 }
 
-.tarjeta1{
+.tarjeta1 {
     background-image: url(/img/index/superBento.jpg);
 }
 
-.tarjeta2{
+.tarjeta2 {
     background-image: url(/img/index/besoDragon.jpg);
 }
 
@@ -436,6 +447,7 @@ hr {
 .tarjeta6 {
     background-image: url(/img/index/atunPicante.jpg);
 }
+
 /**********************FIN INDEX**********************/
 
 
@@ -443,36 +455,40 @@ hr {
 /*****MAIN DE LA PÁGINA EQUIPO*****/
 
 /*Bloque grid con imágenes y sus efectos*/
-.equipo{
+.equipo {
     display: grid;
-    grid-template-areas: 
-    'm m c c f '
-    'e e c c b ';
+    grid-template-areas:
+        'm m c c f '
+        'e e c c b ';
     width: 80%;
     height: 500px;
     gap: 5px;
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
-.equipo div:nth-child(1), .equipo div:nth-child(2), .equipo div:nth-child(3), .equipo div:nth-child(4), .equipo div:nth-child(5){
-    box-shadow: 0 0 5px 3px rgb(71, 71, 71);
+.equipo div:nth-child(1),
+.equipo div:nth-child(2),
+.equipo div:nth-child(3),
+.equipo div:nth-child(4),
+.equipo div:nth-child(5) {
+    box-shadow: 0 0 5px 3px rgb(163, 163, 163);
     border-radius: 8px;
 }
 
-.equipo div:nth-child(1){
+.equipo div:nth-child(1) {
     grid-area: m;
     background-image: url(/img/equipo/andrewNishimura.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position-y: -40px;
     filter: sepia();
     transition: 0.7s;
 }
 
-.equipo div:nth-child(1):hover{
+.equipo div:nth-child(1):hover {
     transform: rotate(720deg);
 }
 
-.equipo div:nth-child(2){
+.equipo div:nth-child(2) {
     grid-area: c;
     background-image: url(/img/equipo/nakaneNishimura.jpg);
     background-size: cover;
@@ -481,12 +497,12 @@ hr {
     transition: 0.7s;
 }
 
-.equipo div:nth-child(2):hover{
+.equipo div:nth-child(2):hover {
     transform: rotate(20deg) scale(60%);
-    filter:blur()
+    filter: blur()
 }
 
-.equipo div:nth-child(3){
+.equipo div:nth-child(3) {
     grid-area: f;
     background-image: url(/img/equipo/hichitoNishimura.jpg);
     background-size: cover;
@@ -495,22 +511,22 @@ hr {
     transition: 0.7s;
 }
 
-.equipo div:nth-child(3):hover{
+.equipo div:nth-child(3):hover {
     transform: rotateY(180deg);
 }
 
-.equipo div:nth-child(4){
+.equipo div:nth-child(4) {
     grid-area: e;
     background-image: url(/img/equipo/joeNishimura.jpg);
     background-size: cover;
     transition: 0.7s;
 }
 
-.equipo div:nth-child(4):hover{
+.equipo div:nth-child(4):hover {
     transform: rotateX(180deg);
 }
 
-.equipo div:nth-child(5){
+.equipo div:nth-child(5) {
     grid-area: b;
     background-image: url(/img/equipo/fredNishimura.jpg);
     background-size: cover;
@@ -519,50 +535,169 @@ hr {
     transition: 0.7s;
 }
 
-.equipo div:nth-child(5):hover{
+.equipo div:nth-child(5):hover {
     transform: skewX(20deg)
 }
 
 /*Bloque de citas y sus keyframes*/
-
-.andrewquote{
+.andrewquote,
+.hichitoquote,
+.fredquote,
+.nakanequote,
+.joequote {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 88%;
     height: 150px;
     margin: 20px auto;
-    background-color: rebeccapurple;
+    padding: 0 70px;
 }
 
-.andrewquote div{
-    width: 130px;
-    height: 130px;
+/*para quotes con imagen a derecha*/
+.hichitoquote,
+.nakanequote {
+    flex-direction: row-reverse;
+}
+
+.andrewquote div,
+.hichitoquote div,
+.fredquote div,
+.nakanequote div,
+.joequote div {
+    position: relative;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    box-shadow: 0 0 15px 2px black inset;    
+    box-shadow: 0 0 15px 2px black inset;
 }
 
-.andrewquote div:hover{
-    animation: rebote 3s infinite ease-in-out;
-    background-color: blue;
+/*quotes con imagen a izquierda*/
+.andrewquote div {
+    margin: 20px 0 0 80px;
+    background-image: url(/img/equipo/andrewNishimura.jpg);
+    background-size: 250%;
+    background-position: -105px -5px;
+}
+
+.fredquote div {
+    margin: 20px 0 0 80px;
+    background-image: url(/img/equipo/fredNishimura.jpg);
+    background-size: 340%;
+    background-position: -195px -10px;
+}
+
+.joequote div {
+    margin: 20px 0 0 80px;
+    background-image: url(/img/equipo/joeNishimura.jpg);
+    background-size: 230%;
+    background-position: -70px -10px;
+}
+
+/*quotes con imagen a derecha*/
+.hichitoquote div {
+    margin: 20px 80px 0 0;
+    background-image: url(/img/equipo/hichitoNishimura.jpg);
+    background-size: 340%;
+    background-position: -195px -10px;
+}
+
+.nakanequote div {
+    margin: 20px 80px 0 0;
+    background-image: url(/img/equipo/nakaneNishimura.jpg);
+    background-size: 200%;
+    background-position: -55px 2px;
+}
+
+.andrewquote div:hover,
+.hichitoquote div:hover,
+.fredquote div:hover,
+.nakanequote div:hover, .joequote div:hover {
+    animation: rebote 0.7s infinite ease-in-out;
 }
 
 @keyframes rebote {
-    from {top: -10px;}
-    to{top: 100px;}
+    0% {
+        top: 0px
+    }
+
+    25% {
+        top: 15px
+    }
+
+    50% {
+        top: 5px
+    }
+
+    75% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0
+    }
 }
 
-.andrewquote hr{
+.andrewquote hr,
+.hichitoquote hr,
+.fredquote hr,
+.nakanequote hr, .joequote hr {
     width: 3px;
-    height: 100px;
+    height: 90px;
+    margin-bottom: 50px;
     background-color: #2a92d9;
+    border: 1px solid #2a92d9;
 }
 
-.andrewquote blockquote{
+.andrewquote blockquote,
+.hichitoquote blockquote,
+.fredquote blockquote,
+.nakanequote blockquote, .joequote blockquote {
     width: 70%;
+    padding-right: 20px;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.5em;
+}
+
+/*corrección padding para la quote con foto a la derecha*/
+.hichitoquote blockquote,
+.nakanequote blockquote {
+    padding: 0 0 0 40px;
+}
+/********fin******/
+
+.andrewquote blockquote span,
+.hichitoquote blockquote span,
+.fredquote blockquote span,
+.nakanequote blockquote span, .joequote blockquote span {
+    font-size: 1.4em;
+}
+
+.andrewquote+p,
+.hichitoquote+p,
+.fredquote+p,
+.nakanequote+p, .joequote+p {
+    width: 80%;
+    margin: -20px auto 70px auto;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 0.9em;
+    color: rgb(134, 134, 134);
+}
+
+/*corrección p bajo quote para imagen a derecha*/
+.hichitoquote+p,
+.nakanequote+p {
+    padding-right: 280px;
+}
+/******fin*****/
+
+.andrewquote+p span,
+.hichitoquote+p span,
+.fredquote+p span,
+.nakanequote+p span, .joequote+p span {
+    font-size: 1.3em;
 }
 
 @media screen and (max-width: 800px) {}
