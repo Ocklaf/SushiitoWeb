@@ -191,7 +191,7 @@ h1::first-letter {
     font-size: 1.6rem;
 }
 
-h1 span{
+h1 span {
     font-size: 1.6rem;
 }
 
@@ -253,8 +253,6 @@ address {
 address span {
     font-size: 1.3em;
 }
-
-
 
 /*************FIN DEL FOOTER COMÚN***************/
 
@@ -620,7 +618,8 @@ hr {
 .andrewquote div:hover,
 .hichitoquote div:hover,
 .fredquote div:hover,
-.nakanequote div:hover, .joequote div:hover {
+.nakanequote div:hover,
+.joequote div:hover {
     animation: rebote 0.7s infinite ease-in-out;
 }
 
@@ -649,7 +648,8 @@ hr {
 .andrewquote hr,
 .hichitoquote hr,
 .fredquote hr,
-.nakanequote hr, .joequote hr {
+.nakanequote hr,
+.joequote hr {
     width: 3px;
     height: 90px;
     margin-bottom: 50px;
@@ -660,7 +660,8 @@ hr {
 .andrewquote blockquote,
 .hichitoquote blockquote,
 .fredquote blockquote,
-.nakanequote blockquote, .joequote blockquote {
+.nakanequote blockquote,
+.joequote blockquote {
     width: 70%;
     padding-right: 20px;
     font-style: italic;
@@ -673,19 +674,22 @@ hr {
 .nakanequote blockquote {
     padding: 0 0 0 40px;
 }
+
 /********fin******/
 
 .andrewquote blockquote span,
 .hichitoquote blockquote span,
 .fredquote blockquote span,
-.nakanequote blockquote span, .joequote blockquote span {
+.nakanequote blockquote span,
+.joequote blockquote span {
     font-size: 1.4em;
 }
 
 .andrewquote+p,
 .hichitoquote+p,
 .fredquote+p,
-.nakanequote+p, .joequote+p {
+.nakanequote+p,
+.joequote+p {
     width: 80%;
     margin: -20px auto 70px auto;
     padding-right: 20px;
@@ -699,34 +703,38 @@ hr {
 .nakanequote+p {
     padding-right: 280px;
 }
+
 /******fin*****/
 
 .andrewquote+p span,
 .hichitoquote+p span,
 .fredquote+p span,
-.nakanequote+p span, .joequote+p span {
+.nakanequote+p span,
+.joequote+p span {
     font-size: 1.3em;
 }
+
 /**************FIN PÁGINA EQUIPO************/
 
 
 /*****************INICIO PÁGINA CARTA*****************/
-.contenedorcartas{
+.contenedorcartas {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 80px 0; 
+    margin: 80px 0;
     width: 100%;
     height: 1100px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     box-shadow: 1px 0 4px 1px grey;
-    text-align: center; 
-    z-index: -10; /*para posicionarlo por detŕas del descuento*/
+    text-align: center;
+    z-index: -10;
+    /*para posicionarlo por detŕas del descuento*/
 }
 
-.contenedorcartas::before{
+.contenedorcartas::before {
     content: "";
     position: absolute;
     top: 0;
@@ -737,35 +745,37 @@ hr {
     background-size: 125%;
     background-position-y: -240px;
     filter: opacity(0.1);
-    z-index: -10; /*para posicionarlo por detŕas del descuento*/
+    z-index: -10;
+    /*para posicionarlo por detŕas del descuento*/
 }
 
-.contenedorcartas article{
+.contenedorcartas article {
     width: 35%;
     margin-top: 125px;
 }
 
-.contenedorcartas h2{
+.contenedorcartas h2 {
     color: #2a92d9;
     font-size: 1em;
     padding-left: 90px;
 }
 
-.contenedorcartas h2::first-letter, .contenedorcartas h2 span{
+.contenedorcartas h2::first-letter,
+.contenedorcartas h2 span {
     font-size: 1.2em;
 }
 
-.contenedorcartas ul li::first-letter{
+.contenedorcartas ul li::first-letter {
     font-size: 1.3em;
 }
 
-.contenedorcartas ul li{
+.contenedorcartas ul li {
     display: block;
     font-size: 0.9em;
     line-height: 4em;
 }
 
-.contenedorcartas ul li:first-child{
+.contenedorcartas ul li:first-child {
     margin-top: 30px;
     color: red;
     font-size: 1.1em;
@@ -773,9 +783,10 @@ hr {
 
 /*****************FIN PÁGINA CARTA*****************/
 
+
 /*****************INICIO PÁGINA LOCALIZACIÓN*****************/
 
-.contenedorlocalizacion{
+.contenedorlocalizacion {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -784,60 +795,60 @@ hr {
     margin-top: 100px;
 }
 
-.contenedorlocalizacion iframe{
+.contenedorlocalizacion iframe {
     width: 450px;
     border-radius: 20px 50%;
     box-shadow: 0 0 10px 5px grey;
 }
 
-.contenedorlocalizacion div{
+.contenedorlocalizacion div {
     width: 450px;
     height: 450px;
     border-radius: 20px;
     border: 1px solid grey;
 }
 
-.contenedorlocalizacion div section h2{
+.contenedorlocalizacion div section h2 {
     margin: 60px;
     font-size: 1em;
     text-align: center;
     color: #2a92d9;
 }
 
-.contenedorlocalizacion div section h2::first-letter{
+.contenedorlocalizacion div section h2::first-letter {
     font-size: 1.2em;
 }
 
-.contenedorlocalizacion div section p{
+.contenedorlocalizacion div section p {
     margin: 10px 30px;
     line-height: 2em;
     font-size: 0.8em;
 }
 
-.contenedorlocalizacion div section strong{
+.contenedorlocalizacion div section strong {
     margin-left: 19px;
     font-size: 0.9em;
 }
 
-.contenedorlocalizacion div section strong span{
+.contenedorlocalizacion div section strong span {
     font-size: 1.1em;
 }
 
-.contenedorlocalizacion hr{
+.contenedorlocalizacion hr {
     width: 90%;
     margin-top: 15px;
     background-color: grey;
     border: 2px solid grey;
 }
 
-.contenedorlocalizacion h3{
+.contenedorlocalizacion h3 {
     text-align: center;
     font-size: 0.8em;
     color: #2a92d9;
     margin-bottom: 20px;
 }
 
-.contenedorlocalizacion em{
+.contenedorlocalizacion em {
     display: block;
     font-size: 0.7em;
     width: 89%;
@@ -845,7 +856,7 @@ hr {
     color: rgb(83, 83, 83);
 }
 
-.contenedorlocalizacion em span{
+.contenedorlocalizacion em span {
     font-weight: bold;
 }
 
@@ -860,4 +871,67 @@ hr {
     box-shadow: 0px 0px 10px 2px black inset;
 }
 
-@media screen and (max-width: 800px) {}
+/*****************INICIO PÁGINA LOCALIZACIÓN*****************/
+
+@media screen and (max-width: 800px) {
+
+    .navegacion {
+        height: 300px;
+        margin-top: 70px;
+        background-image: linear-gradient(to right, ivory, rgb(95, 64, 64));
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        box-shadow: 1px 2px 3px grey;
+    }
+
+    .navegacion ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bloquetarjetas a>div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 320px;
+        height: 390px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+        box-shadow: 0 0 10px rgb(192, 192, 192);
+        margin-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .tarjeta1,
+    .tarjeta2,
+    .tarjeta3,
+    .tarjeta4,
+    .tarjeta5,
+    .tarjeta6 {
+        width: 290px;
+        height: 330px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        margin: 12px auto 0 auto;
+    }
+
+    .tarjeta1+p,
+    .tarjeta2+p,
+    .tarjeta3+p,
+    .tarjeta4+p,
+    .tarjeta5+p,
+    .tarjeta6+p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 0.9em;
+        font-weight: 600;
+        padding-bottom: 18px;
+    }
+}
