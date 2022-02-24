@@ -179,6 +179,22 @@ ul li a p:hover {
     font-size: 1.2rem;
 }
 
+h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    color: #2a92d9;
+    margin-top: 40px;
+}
+
+h1::first-letter {
+    font-size: 1.6rem;
+}
+
+h1 span{
+    font-size: 1.6rem;
+}
+
 /********FIN DEL HEADER/NAV COMÚN A LAS PÁGINAS***********/
 
 /************FOOTER COMÚN***************/
@@ -238,22 +254,14 @@ address span {
     font-size: 1.3em;
 }
 
+
+
 /*************FIN DEL FOOTER COMÚN***************/
 
 
 /***************CSS DE LA PÁGINA INDEX***************/
 /*****MAIN DE LA PÁGINA INDEX*****/
-h1 {
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: 400;
-    color: #2a92d9;
-    margin-top: 40px;
-}
 
-h1::first-letter {
-    font-size: 1.6rem;
-}
 
 /*Ventana al background*/
 .ventana {
@@ -764,5 +772,92 @@ hr {
 }
 
 /*****************FIN PÁGINA CARTA*****************/
+
+/*****************INICIO PÁGINA LOCALIZACIÓN*****************/
+
+.contenedorlocalizacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.contenedorlocalizacion iframe{
+    width: 450px;
+    border-radius: 20px 50%;
+    box-shadow: 0 0 10px 5px grey;
+}
+
+.contenedorlocalizacion div{
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+.contenedorlocalizacion div section h2{
+    margin: 60px;
+    font-size: 1em;
+    text-align: center;
+    color: #2a92d9;
+}
+
+.contenedorlocalizacion div section h2::first-letter{
+    font-size: 1.2em;
+}
+
+.contenedorlocalizacion div section p{
+    margin: 10px 30px;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+.contenedorlocalizacion div section strong{
+    margin-left: 19px;
+    font-size: 0.9em;
+}
+
+.contenedorlocalizacion div section strong span{
+    font-size: 1.1em;
+}
+
+.contenedorlocalizacion hr{
+    width: 90%;
+    margin-top: 15px;
+    background-color: grey;
+    border: 2px solid grey;
+}
+
+.contenedorlocalizacion h3{
+    text-align: center;
+    font-size: 0.8em;
+    color: #2a92d9;
+    margin-bottom: 20px;
+}
+
+.contenedorlocalizacion em{
+    display: block;
+    font-size: 0.7em;
+    width: 89%;
+    margin: 0 auto;
+    color: rgb(83, 83, 83);
+}
+
+.contenedorlocalizacion em span{
+    font-weight: bold;
+}
+
+/*Ventana al background*/
+.ventana2 {
+    width: 100%;
+    height: 240px;
+    margin: 80px 0;
+    background-image: url(/img/localizacion/fr2_sushitable.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 10px 2px black inset;
+}
 
 @media screen and (max-width: 800px) {}
