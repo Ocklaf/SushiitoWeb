@@ -58,7 +58,7 @@
     height: 10px;
     top: 50px;
     right: 65px;
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
 
 .banner:hover::before{
@@ -283,7 +283,7 @@ footer h3::first-letter {
 }
 
 address {
-    margin-top: 40px;
+    margin-top: 20px;
     font-style: normal;
     font-size: 0.8em;
 }
@@ -525,7 +525,7 @@ hr {
     background-image: url(/img/equipo/andrewNishimura.jpg);
     background-size: cover;
     background-position-y: -40px;
-    filter: sepia();
+    filter: sepia(100%);
     transition: 0.7s;
 }
 
@@ -543,8 +543,8 @@ hr {
 }
 
 .equipo div:nth-child(2):hover {
-    transform: rotate(20deg) scale(60%);
-    filter: blur()
+    transform: rotate(20deg) scale(0.6);
+    filter: blur(0)
 }
 
 .equipo div:nth-child(3) {
@@ -552,7 +552,7 @@ hr {
     background-image: url(/img/equipo/hichitoNishimura.jpg);
     background-size: cover;
     background-position-x: -65px;
-    filter: grayscale();
+    filter: grayscale(100%);
     transition: 0.7s;
 }
 
@@ -576,7 +576,7 @@ hr {
     background-image: url(/img/equipo/fredNishimura.jpg);
     background-size: cover;
     background-position-x: -150px;
-    filter: sepia();
+    filter: sepia(100%);
     transition: 0.7s;
 }
 
@@ -1066,6 +1066,7 @@ hr {
     .joequote div {
         position: relative;
         width: 100px;
+        height: 70px;
         border-radius: 50%;
         box-shadow: 0 0 15px 2px black inset;
     }
@@ -1100,5 +1101,4 @@ hr {
         z-index: -10;
         /*para posicionarlo por detŕas del descuento*/
     }
-
 }
