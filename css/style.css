@@ -42,7 +42,7 @@
 .banner:active{
     width: 170px;
     height: 120px;
-    background-image: url(/img/comun/cuponDescuento.jpg);
+    background-image: url("../img/comun/cuponDescuento.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px 0 0 40px;
@@ -304,7 +304,7 @@ address span {
     width: 100%;
     height: 240px;
     margin-top: 50px;
-    background-image: url(/img/index/fr1_nigirisushi.jpg);
+    background-image: url("../img/index/fr1_nigirisushi.jpg");
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0px 0px 10px 2px black inset;
@@ -470,27 +470,27 @@ hr {
 }
 
 .tarjeta1 {
-    background-image: url(/img/index/superBento.jpg);
+    background-image: url("../img/index/superBento.jpg");
 }
 
 .tarjeta2 {
-    background-image: url(/img/index/besoDragon.jpg);
+    background-image: url("../img/index/besoDragon.jpg");
 }
 
 .tarjeta3 {
-    background-image: url(/img/index/bentoFantasia.png);
+    background-image: url("../img/index/bentoFantasia.png");
 }
 
 .tarjeta4 {
-    background-image: url(/img/index/gambasMoriwase.jpg);
+    background-image: url("../img/index/gambasMoriwase.jpg");
 }
 
 .tarjeta5 {
-    background-image: url(/img/index/miniBento.jpg);
+    background-image: url("../img/index/miniBento.jpg");
 }
 
 .tarjeta6 {
-    background-image: url(/img/index/atunPicante.jpg);
+    background-image: url("../img/index/atunPicante.jpg");
 }
 
 /**********************FIN INDEX**********************/
@@ -522,9 +522,10 @@ hr {
 
 .equipo div:nth-child(1) {
     grid-area: m;
-    background-image: url(/img/equipo/andrewNishimura.jpg);
-    background-size: cover;
-    background-position-y: -40px;
+    background-image: url("../img/equipo/andrewNishimura.jpg");
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
     filter: sepia(100%);
     transition: 0.7s;
 }
@@ -535,9 +536,10 @@ hr {
 
 .equipo div:nth-child(2) {
     grid-area: c;
-    background-image: url(/img/equipo/nakaneNishimura.jpg);
-    background-size: cover;
-    background-position-x: -130px;
+    background-image: url("../img/equipo/nakaneNishimura.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     filter: blur(2px);
     transition: 0.7s;
 }
@@ -549,9 +551,10 @@ hr {
 
 .equipo div:nth-child(3) {
     grid-area: f;
-    background-image: url(/img/equipo/hichitoNishimura.jpg);
-    background-size: cover;
-    background-position-x: -65px;
+    background-image: url("../img/equipo/hichitoNishimura.jpg");
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
     filter: grayscale(100%);
     transition: 0.7s;
 }
@@ -562,8 +565,10 @@ hr {
 
 .equipo div:nth-child(4) {
     grid-area: e;
-    background-image: url(/img/equipo/joeNishimura.jpg);
-    background-size: cover;
+    background-image: url("../img/equipo/joeNishimura.jpg");
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
     transition: 0.7s;
 }
 
@@ -573,10 +578,11 @@ hr {
 
 .equipo div:nth-child(5) {
     grid-area: b;
-    background-image: url(/img/equipo/fredNishimura.jpg);
-    background-size: cover;
-    background-position-x: -150px;
-    filter: sepia(100%);
+    background-image: url("../img/equipo/fredNishimura.jpg");
+        background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: sepia();
     transition: 0.7s;
 }
 
@@ -620,7 +626,7 @@ hr {
 /*quotes con imagen a izquierda*/
 .andrewquote div {
     margin: 20px 0 0 80px;
-    background-image: url(/img/equipo/andrewNishimura.jpg);
+    background-image: url("../img/equipo/andrewNishimura.jpg");
     background-size: 250%;
     background-position: 67% 10%;
     background-repeat: no-repeat;
@@ -628,7 +634,7 @@ hr {
 
 .fredquote div {
     margin: 20px 0 0 80px;
-    background-image: url(/img/equipo/fredNishimura.jpg);
+    background-image: url("../img/equipo/fredNishimura.jpg");
     background-size: 340%;
     background-position: 84% -5%;
     background-repeat: no-repeat;
@@ -636,7 +642,7 @@ hr {
 
 .joequote div {
     margin: 20px 0 0 80px;
-    background-image: url(/img/equipo/joeNishimura.jpg);
+    background-image: url("../img/equipo/joeNishimura.jpg");
     background-size: 230%;
     background-position: 45% -2%;
     background-repeat: no-repeat;
@@ -645,7 +651,7 @@ hr {
 /*quotes con imagen a derecha*/
 .hichitoquote div {
     margin: 20px 80px 0 0;
-    background-image: url(/img/equipo/hichitoNishimura.jpg);
+    background-image: url("../img/equipo/hichitoNishimura.jpg");
     background-size: 340%;
     background-position: 82% 12%;
     background-repeat: no-repeat;
@@ -653,7 +659,7 @@ hr {
 
 .nakanequote div {
     margin: 20px 80px 0 0;
-    background-image: url(/img/equipo/nakaneNishimura.jpg);
+    background-image: url("../img/equipo/nakaneNishimura.jpg");
     background-size: 200%;
     background-position: 55% 4%;
     background-repeat: no-repeat;
@@ -785,7 +791,7 @@ hr {
     left: 0;
     width: 100%;
     height: 1100px;
-    background-image: url(/img/carta/sushitoRestaurant.jpg);
+    background-image: url("../img/carta/sushitoRestaurant.jpg");
     background-size: 125%;
     background-position-y: -240px;
     filter: opacity(0.1);
@@ -909,7 +915,7 @@ hr {
     width: 100%;
     height: 240px;
     margin: 80px 0;
-    background-image: url(/img/localizacion/fr2_sushitable.jpg);
+    background-image: url("../img/localizacion/fr2_sushitable.jpg");
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0px 0px 10px 2px black inset;
