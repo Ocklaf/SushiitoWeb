@@ -18,7 +18,6 @@
 .logotipo:hover {
     opacity: 0.7;
     transform: rotate(-5deg) scale(1.05);
-    transition: all 0.7s linear;
 }
 
 .banner {
@@ -518,6 +517,7 @@ hr {
 .equipo div:nth-child(5) {
     box-shadow: 0 0 5px 3px rgb(163, 163, 163);
     border-radius: 8px;
+    z-index: -10;
 }
 
 .equipo div:nth-child(1) {
@@ -579,7 +579,7 @@ hr {
 .equipo div:nth-child(5) {
     grid-area: b;
     background-image: url("../img/equipo/fredNishimura.jpg");
-        background-size: cover;   
+    background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
     filter: sepia();
@@ -921,7 +921,9 @@ hr {
     box-shadow: 0px 0px 10px 2px black inset;
 }
 
-/*****************INICIO PÁGINA LOCALIZACIÓN*****************/
+/*****************FINAL PÁGINA LOCALIZACIÓN*****************/
+
+/**************** INICIO MEDIA QUERY *******************/
 
 @media screen and (max-width: 800px) {
 
@@ -1100,7 +1102,7 @@ hr {
         left: 0;
         width: 100%;
         height: 2200px;
-        background-image: url(/img/carta/sushitoRestaurant.jpg);
+        background-image: url("../img/carta/sushitoRestaurant.jpg");
         background-size: cover;
         background-position-y: -240px;
         filter: opacity(0.1);
