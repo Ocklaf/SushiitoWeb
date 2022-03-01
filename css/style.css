@@ -31,6 +31,7 @@
     border-radius: 40% 0 0 40%;
     box-shadow: -2px 1px 4px grey;
     transition: all 0.2s linear;
+    z-index: 10;
 }
 
 .banner:hover {
@@ -116,7 +117,7 @@
     display: inline-block;
     width: 150px;
     margin-left: 50px;
-    z-index: 10;
+
 }
 
 .covid img {
@@ -126,7 +127,7 @@
     display: inline-block;
     width: 100px;
     margin-right: 20px;
-    z-index: -10;
+
 }
 
 ul,
@@ -517,7 +518,6 @@ hr {
 .equipo div:nth-child(5) {
     box-shadow: 0 0 5px 3px rgb(163, 163, 163);
     border-radius: 8px;
-    z-index: -10;
 }
 
 .equipo div:nth-child(1) {
@@ -780,7 +780,7 @@ hr {
     border-bottom: 2px solid black;
     box-shadow: 1px 0 4px 1px grey;
     text-align: center;
-    z-index: -10;
+
     /*para posicionarlo por detŕas del descuento*/
 }
 
@@ -795,7 +795,7 @@ hr {
     background-size: 125%;
     background-position-y: -240px;
     filter: opacity(0.1);
-    z-index: -10;
+
     /*para posicionarlo por detŕas del descuento*/
 }
 
@@ -1091,7 +1091,7 @@ hr {
         border-bottom: 2px solid black;
         box-shadow: 1px 0 4px 1px grey;
         text-align: center;
-        z-index: -10;
+
         /*para posicionarlo por detŕas del descuento*/
     }
 
@@ -1106,7 +1106,7 @@ hr {
         background-size: cover;
         background-position-y: -240px;
         filter: opacity(0.1);
-        z-index: -10;
+
         /*para posicionarlo por detŕas del descuento*/
     }
 }
