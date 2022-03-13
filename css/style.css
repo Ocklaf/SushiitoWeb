@@ -10,7 +10,7 @@
 /*Posicionado y dimensiones del logo, retorno de transforms aplicados en el hover con temporización*/
 .logotipo {
     display: block;
-    width: 300px;
+    width: 340px;
     margin: 30px auto;
     transition: all 0.6s linear;
 }
@@ -94,9 +94,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 80px;
     margin-top: 70px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background-image: linear-gradient(to right, rgb(95, 64, 64), ivory, rgb(95, 64, 64));
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
@@ -123,10 +123,10 @@
 
 .covid img {
     position: relative;
-    top: -35px;
+    top: -55px;
     right: 30px;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     margin-right: 20px;
 
 }
@@ -134,7 +134,7 @@
 ul,
 li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 55px;
 }
 
 li a {
@@ -168,7 +168,7 @@ ul li a:hover {
 .fa-pinterest,
 .fa-instagram,
 .fa-google-plus-g {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-decoration: none;
     margin-left: 10px;
 }
@@ -223,8 +223,9 @@ h1 {
 
 /************FOOTER COMÚN***************/
 footer {
-    width: 1520px;
-    height: 300px;
+    width: 1890px;
+    height: 380px;
+    margin: 0 auto;
     background-color: rgb(36, 36, 36);
     color: white;
     text-align: center;
@@ -238,10 +239,8 @@ footer {
 }
 
 .footertextos div {
-    width: 32%;
-    margin-top: 20px;
-    padding: 30px;
-
+    width: 60%;
+    padding: 90px;
 }
 
 .footertextos div p span {
@@ -250,7 +249,7 @@ footer {
 
 .hrfooter {
     width: 3px;
-    height: 160px;
+    height: 180px;
     background-color: white;
     border: 1px solid white;
 }
@@ -266,8 +265,9 @@ footer h3 span {
 }
 
 address {
+    margin-top: -20px;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /*************FIN DEL FOOTER COMÚN***************/
@@ -293,13 +293,14 @@ address {
     width: 80%;
     height: 100px;
     margin: 70px auto 0px auto;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    word-spacing: 0.2rem;
 }
 
 .cita div {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 75px;
     border-left: 4px solid #2a92d9;
 }
 
@@ -310,14 +311,14 @@ address {
 }
 
 .cita p {
-    margin-top: 35px;
+    margin-top: 55px;
     text-align: end;
     color: grey;
 }
 
 /*Linea separadora HR*/
 hr {
-    margin: 60px auto 20px auto;
+    margin: 80px auto 20px auto;
     width: 30%;
     background-color: black;
     border: 2px solid black;
@@ -334,7 +335,7 @@ hr {
 
 .adomicilio h2 {
     color: #2a92d9;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     font-weight: 400;
     margin-top: -30px;
@@ -351,7 +352,7 @@ hr {
 }
 
 .adomiciliotexto p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.2rem;
 }
 
@@ -359,7 +360,7 @@ hr {
 .imgrepartidor img {
     display: block;
     width: 300px;
-    margin-top: 15px;
+    margin-top: 25px;
     box-shadow: 0 0 10px grey;
 }
 
@@ -382,7 +383,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .bloquetarjetas a {
@@ -668,7 +669,7 @@ hr {
 .fredquote hr,
 .nakanequote hr,
 .joequote hr {
-    width: 3px;
+    width: 4px;
     height: 90px;
     margin-bottom: 50px;
     background-color: #2a92d9;
@@ -683,7 +684,7 @@ hr {
     width: 70%;
     padding-right: 20px;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
 }
 
@@ -704,14 +705,14 @@ hr {
     margin: -20px auto 70px auto;
     padding-right: 20px;
     text-align: right;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: rgb(134, 134, 134);
 }
 
 /*corrección p bajo quote para imagen a derecha*/
 .hichitoquote+p,
 .nakanequote+p {
-    padding-right: 280px;
+    padding-right: 300px;
 }
 
 /**************FIN PÁGINA EQUIPO************/
@@ -750,21 +751,21 @@ hr {
 }
 
 .contenedorcartas article {
-    width: 395px;
+    width: 450px;
     margin-top: 125px;
 }
 
 .contenedorcartas h2 {
     color: #2a92d9;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: lighter;
-    padding-left: 90px;
+    padding-left: 100px;
 }
 
-.contenedorcartas ul li {
+.contenedorcartas ul{
     display: block;
     font-size: 1.2rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
 }
 
 .contenedorcartas ul li:first-child {
@@ -811,12 +812,12 @@ hr {
 .contenedorlocalizacion div section p {
     margin: 10px 30px;
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .contenedorlocalizacion div section strong {
-    margin-left: 19px;
-    font-size: 1.2rem;
+    margin-left: 15px;
+    font-size: 1.3rem;
 }
 
 .contenedorlocalizacion hr {
@@ -828,7 +829,7 @@ hr {
 
 .contenedorlocalizacion h3 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     color: #2a92d9;
     margin-bottom: 20px;
@@ -836,7 +837,7 @@ hr {
 
 .contenedorlocalizacion em {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 89%;
     margin: 0 auto;
     color: rgb(83, 83, 83);
@@ -851,7 +852,7 @@ hr {
     width: 100%;
     height: 240px;
     margin: 80px 0;
-    background-image: url("../img/localizacion/fr2_sushitable.jpg");
+    background-image: url("../img/localizacion/fr2_sushitable.jpg");    
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0px 0px 10px 2px black inset;
@@ -934,7 +935,7 @@ hr {
     .joequote blockquote {
         width: 100%;
         font-style: italic;
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.3rem;
     }
 
@@ -950,7 +951,7 @@ hr {
         margin: 20px auto 70px auto;
         padding-right: 20px;
         text-align: right;
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: rgb(134, 134, 134);
     }
 
@@ -1005,9 +1006,9 @@ hr {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin: 80px 0;
+        margin: 60px 0;
         width: 100%;
-        height: 2200px;
+        height: 2000px;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         box-shadow: 1px 0 4px 1px grey;
@@ -1022,7 +1023,7 @@ hr {
         top: 0;
         left: 0;
         width: 100%;
-        height: 2200px;
+        height: 2000px;
         background-image: url("../img/carta/sushitoRestaurant.jpg");
         background-size: cover;
         background-position-y: -240px;
